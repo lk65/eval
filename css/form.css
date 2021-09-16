@@ -1,0 +1,202 @@
+/* FORMULAIRES */
+
+.form {
+	box-shadow: 0 0 10px black;
+	border-radius:10px;
+	width:550px;
+	display:block;
+	margin:120px auto;
+	padding: 15px;
+	background: white;
+}
+
+.form h1, .form h2{
+	font-family:Milkshake;
+	text-align: center;
+}
+
+.form h1 {
+	margin-top:20px;
+}
+
+h1{
+	font-family:Milkshake;
+	text-align: center;
+	margin-top:100px;
+}
+
+.liseret {
+	width:200px;
+	height:2px;
+	background:black;
+	display:block;
+	margin:auto;
+	animation:liseret 1s linear;
+}
+
+@keyframes liseret {
+	from {width:1px;} to {width:200px;}
+}
+
+/* TOUS LES CHAMPS DES FORMULAIRES */
+
+.input,
+.button {
+	display:block;
+	margin:30px auto;
+	font-family:Arial;
+}
+
+.input,
+.message {
+	width:400px;
+	padding:10px;
+}
+
+.message {
+	height:250px;
+	resize:none;
+	display:block;
+	margin:10px auto;
+	font-family:Arial;
+}
+
+.button {
+	padding:10px 20px;
+	border-radius:20px;
+	border:solid 1px black;
+	cursor: pointer;
+}
+
+.select {
+	display: block;
+	margin: 20px auto;
+}
+
+/* CASE POUR LES CONDITIONS GÉNÉRALES D'UTILISATION */
+
+.case {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 400px;
+	margin: auto;
+}
+
+.case label {
+	font-family: Arial;
+	font-size:14px;
+}
+
+/* IMAGES DE FOND */
+
+.image-form {
+	width:250px;
+	position: fixed;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.first {
+	left:5%;
+}
+
+.second {
+	right:5%;
+}
+
+/* LABEL ET PARAGRAPHES */
+
+.phrase {
+	text-align: center;
+	font-family: Arial;
+}
+
+.phrase a {
+	color:steelblue;
+	font-weight: bold;
+}
+
+.label {
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	font-family: Arial;
+	text-decoration: underline;
+}
+
+.add_form_field {
+	display: block;
+	margin: 20px auto;
+	padding: 0 15px;
+}
+
+.center-inputs {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin:20px auto;
+}
+
+/* LEGENDE PRIX */
+
+.legende {
+	width:80%;
+	margin-left:25px;
+}
+
+.legende ol {
+	list-style: none;
+	font-family: Arial;
+	padding: 0;
+}
+
+.legende ol li {
+	margin:10px 0;
+}
+
+.legende p {
+	font-family: Arial;
+}
+
+/* MESSAGES D'ERREUR ET SUCCES */
+
+.success,.erreur {
+	position:relative;
+	text-align:center;
+	font-family:Verdana;
+	top:90px;
+}
+
+.erreur {
+	background:pink; 
+	color:red;
+}
+
+.success {
+	background:lightgreen; 
+	color:green;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1250px) {
+
+	.image-form {
+		display: none;		
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.form {
+		width:95%;
+	}
+
+	.input, .message {
+		width:80%;
+	}
+
+}
+
+
